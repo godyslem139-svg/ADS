@@ -62,7 +62,7 @@ export default function About() {
             <div className="relative mx-auto w-full max-w-md lg:max-w-none h-[400px] sm:h-[480px] rounded-[2rem] border-2 border-[#00e5ff]/40 shadow-[0_0_50px_rgba(0,229,255,0.2)] bg-[#0b132b]/80 overflow-hidden p-3">
               <div className="relative w-full h-full rounded-[1.5rem] overflow-hidden">
                 <Image
-                  src="/about.jpg"
+                  src="/about.webp"
                   alt="من نحن - شركاء النجاح"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
