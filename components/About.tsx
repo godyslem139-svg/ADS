@@ -7,25 +7,20 @@ export default function About() {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* محتوى النصوص (جهة اليمين للتصميم العربي) */}
           <div className="lg:col-span-7 flex flex-col items-start text-right">
             
-            {/* الشارة الترويجية */}
             <span className="text-[#00e5ff] text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full bg-[#00e5ff]/10 border border-[#00e5ff]/30 inline-block mb-6 shadow-md">
               من نحن
             </span>
 
-            {/* العنوان الرئيسي */}
             <h2 className="text-3xl sm:text-5xl font-black text-white leading-tight mb-6">
               نحن شريكك الاستراتيجي نحو <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00e5ff] to-[#0077b6]">القمة الرقمية</span>
             </h2>
 
-            {/* الوصف التعريفي */}
             <p className="text-gray-300 text-base sm:text-lg font-light leading-relaxed mb-8">
               لا نقتصر على تقديم خدمات التسويق التقليدية، بل نبتكر حلولاً رقمية متكاملة مصممة خصيصاً لمضاعفة أرباحك وبناء علاقة قوية ومستدامة بين علامتك التجارية وجمهورك المستهدف.
             </p>
 
-            {/* نقاط المميزات */}
             <div className="space-y-4 mb-10 w-full">
               <div className="flex items-center gap-3 bg-[#0b132b]/50 border border-[#00e5ff]/20 p-4 rounded-xl">
                 <div className="w-7 h-7 rounded-full bg-[#00e5ff]/10 flex items-center justify-center text-[#00e5ff] font-bold flex-shrink-0">✓</div>
@@ -49,9 +44,8 @@ export default function About() {
               </div>
             </div>
 
-            {/* زر الواتساب (Call to Action) */}
             <a
-              href="https://wa.me/201000000000"
+              href="https://wa.me/201151033384"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-[#00e5ff] to-[#0077b6] text-[#070b14] font-bold text-base shadow-[0_0_30px_rgba(0,229,255,0.4)] hover:shadow-[0_0_40px_rgba(0,229,255,0.7)] hover:scale-105 transition-all duration-300"
@@ -64,7 +58,6 @@ export default function About() {
 
           </div>
 
-          {/* حاوية الصورة مع الإطار المضيء (تأكد من وضع صورة about.jpg في مجلد public) */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto w-full max-w-md lg:max-w-none h-[400px] sm:h-[480px] rounded-[2rem] border-2 border-[#00e5ff]/40 shadow-[0_0_50px_rgba(0,229,255,0.2)] bg-[#0b132b]/80 overflow-hidden p-3">
               <div className="relative w-full h-full rounded-[1.5rem] overflow-hidden">

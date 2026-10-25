@@ -4,7 +4,6 @@ export default function Hero() {
   return (
     <div className="relative w-full flex flex-col items-center justify-center overflow-hidden">
       
-      {/* فيديو الخلفية الخاص بسكشن الهيرو فقط (heroo.mp4) */}
       <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
         <video
           autoPlay
@@ -19,10 +18,8 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#070b14]/85 via-[#070b14]/65 to-[#070b14]/95" />
       </div>
 
-      {/* محتوى الهيرو */}
       <main className="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-4 py-16 md:py-24 max-w-4xl mx-auto">
         
-        {/* بادج تعريفي علوي */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#00e5ff]/10 border border-[#00e5ff]/30 text-[#00e5ff] text-xs md:text-sm mb-6 shadow-[0_0_15px_rgba(0,229,255,0.15)]">
           <span className="w-2 h-2 rounded-full bg-[#00e5ff] animate-pulse" />
           نصنع نمو علامتك التجارية الرقمية
@@ -33,15 +30,12 @@ export default function Hero() {
           حلول التسويق الرقمي <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00e5ff] to-[#0077b6]">المتكاملة</span>
         </h1>
 
-        {/* الوصف التوضيحي */}
         <p className="text-gray-300 text-base md:text-lg max-w-2xl mb-10 leading-relaxed">
           نحّول رؤيتك إلى نتائج حقيقية ومبيعات متصاعدة عبر استراتيجيات تسويقية مبتكرة ومصممة خصيصاً لتعزيز حضورك الريادي في السوق.
         </p>
 
-        {/* أزرار اتخاذ القرار (Call to Action Buttons) */}
         <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
           
-          {/* زر المشاريع/البورفوليو */}
           <Link 
             href="/projects"
             className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#00b4d8] to-[#0077b6] text-white font-semibold shadow-[0_0_20px_rgba(0,180,216,0.4)] hover:shadow-[0_0_25px_rgba(0,180,216,0.7)] hover:scale-[1.02] transition-all duration-300 text-center"
@@ -51,7 +45,7 @@ export default function Hero() {
 
           {/* زر الواتساب */}
           <a 
-            href="https://wa.me/201000000000"
+            href="https://wa.me/201151033384"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto px-8 py-3.5 rounded-xl border border-[#00e5ff]/40 bg-[#0b132b]/80 text-[#00e5ff] font-semibold hover:bg-[#00e5ff]/10 hover:border-[#00e5ff] transition-all duration-300 flex items-center justify-center gap-2 text-center"
