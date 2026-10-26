@@ -1,7 +1,7 @@
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
 import About from "@/components/About";
+import ServicesSection from "@/components/ServicesSection";
 import ProjectsPortfolio from "@/components/ProjectsPortfolio";
 import CTASection from "@/components/CTASection";
 
@@ -24,9 +24,8 @@ export default function Home() {
         <div className="absolute inset-0 bg-[#070b14]/85" />
       </div>
 
-      {/* 1. سكشن الهيرو */}
+      {/* 1. سكشن الهيرو (تم إزالة Navbar من هنا لعدم التكرار) */}
       <div className="w-full max-w-[1400px] mx-auto rounded-[2rem] border border-[#00e5ff]/30 shadow-[0_0_40px_rgba(0,229,255,0.12)] bg-[#0b132b]/60 backdrop-blur-md relative flex flex-col overflow-hidden">
-        <Navbar />
         <Hero />
       </div>
 
@@ -40,12 +39,17 @@ export default function Home() {
         <About />
       </div>
 
-      {/* 4. سكشن معرض الأعمال والمشاريع (تفريتة الكوتشينة - 3 صفوف) */}
+      {/* 4. سكشن خدمات الشركة */}
+      <div className="w-full max-w-[1400px] mx-auto">
+        <ServicesSection />
+      </div>
+
+      {/* 5. سكشن معرض الأعمال والمشاريع */}
       <div className="w-full max-w-[1400px] mx-auto">
         <ProjectsPortfolio />
       </div>
 
-      {/* 5. سكشن الاستشارة المجانية */}
+      {/* 6. سكشن الاستشارة المجانية */}
       <div className="w-full max-w-[1400px] mx-auto">
         <CTASection />
       </div>

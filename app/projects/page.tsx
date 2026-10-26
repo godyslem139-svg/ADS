@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -53,12 +52,7 @@ export default function ProjectsPage() {
         <div className="absolute inset-0 bg-[#070b14]/85" />
       </div>
 
-      {/* الهيدر العلوي */}
-      <div className="w-full max-w-[1400px] mx-auto rounded-[2rem] border border-[#00e5ff]/30 shadow-[0_0_40px_rgba(0,229,255,0.12)] bg-[#0b132b]/60 backdrop-blur-md relative flex flex-col overflow-hidden">
-        <Navbar />
-      </div>
-
-      {/* محتوى صفحة المشاريع */}
+      {/* محتوى صفحة المشاريع (تم حذف الهيدر المكرر من هنا) */}
       <main className="w-full max-w-[1400px] mx-auto px-4 py-12">
         
         {/* عنوان الصفحة الترويجي */}

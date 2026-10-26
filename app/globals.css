@@ -63,3 +63,12 @@ body {
 .animate-wind {
   animation: windSway 6s ease-in-out infinite;
 }
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 75s linear infinite; /* تم بطء السرعة لتصبح هادئة جداً */
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
