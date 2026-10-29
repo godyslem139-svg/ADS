@@ -46,7 +46,7 @@ export default function ProjectsPortfolio() {
   return (
     <section className="py-24 relative overflow-hidden w-full bg-transparent">
       
-      {/* عنوان السكشن والوصف الاحترافي */}
+
       <div className="text-center px-4 mb-20">
         <span className="text-[#00e5ff] text-xs font-bold tracking-[0.25em] uppercase px-5 py-2 rounded-full bg-[#00e5ff]/10 border border-[#00e5ff]/30 inline-block mb-4 shadow-lg">
           سجل نجاحاتنا الرقمية
@@ -59,14 +59,14 @@ export default function ProjectsPortfolio() {
         </p>
       </div>
 
-      {/* شبكة الأعمدة الثلاثة بمسافات أوسع تناسب الحجم الأكبر */}
+
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-36 items-center justify-items-center mb-16">
         <ProjectDeck columnItems={col1} speed={4200} />
         <ProjectDeck columnItems={col2} speed={5200} />
         <ProjectDeck columnItems={col3} speed={4700} />
       </div>
 
-      {/* زر اتخاذ القرار (Call to Action) الانتقال لصفحة المشاريع */}
+
       <div className="flex justify-center px-4">
         <Link
           href="/projects"
@@ -83,7 +83,7 @@ export default function ProjectsPortfolio() {
   );
 }
 
-// مكون عمود الكروت المتتالية بالحجم الأكبر
+
 function ProjectDeck({ columnItems, speed }: { columnItems: any[]; speed: number }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -101,17 +101,16 @@ function ProjectDeck({ columnItems, speed }: { columnItems: any[]; speed: number
   return (
     <div className="relative w-[440px] h-[640px] flex items-center justify-center">
       
-      {/* الكارت الخلفي الأيمن (بحجم أكبر وبروز جانبي واضح) */}
+
       <div className="absolute w-[390px] h-[550px] rounded-3xl translate-x-24 scale-90 pointer-events-none opacity-45 z-0 overflow-hidden shadow-2xl">
         <Image src={thirdProject.img} alt={thirdProject.name} fill className="object-cover" />
       </div>
 
-      {/* الكارت الخلفي الأيسر (بروز جانبي أيسر أكبر) */}
       <div className="absolute w-[390px] h-[550px] rounded-3xl -translate-x-24 scale-90 pointer-events-none opacity-45 z-10 overflow-hidden shadow-2xl">
         <Image src={nextProject.img} alt={nextProject.name} fill className="object-cover" />
       </div>
 
-      {/* الكارت الأمامي النشط (حجم كبير جداً وواضح في المقدمة مع تأثير إضاءة فخم) */}
+
       <a
         href={currentProject.url}
         target="_blank"
@@ -119,7 +118,7 @@ function ProjectDeck({ columnItems, speed }: { columnItems: any[]; speed: number
         key={activeIndex}
         className="absolute w-[420px] h-[600px] flex flex-col items-center gap-4 transition-all duration-700 animate-slideDown cursor-pointer group z-30"
       >
-        {/* موكيت المشروع بحجم كبير وساطع */}
+
         <div className="relative w-full h-[500px] rounded-3xl overflow-hidden shadow-[0_20px_70px_rgba(0,229,255,0.4)] border-2 border-white/20 group-hover:shadow-[0_25px_90px_rgba(0,229,255,0.7)] group-hover:scale-[1.02] transition-all duration-500">
           <Image
             src={currentProject.img}
@@ -129,7 +128,7 @@ function ProjectDeck({ columnItems, speed }: { columnItems: any[]; speed: number
           />
         </div>
 
-        {/* عنوان المشروع ورابط المعاينة أسفل الموكيت مباشرة */}
+
         <div className="flex flex-col items-center justify-center w-full gap-2">
           <span className="text-white font-black text-lg md:text-xl group-hover:text-[#00e5ff] transition-colors text-center truncate w-full drop-shadow-md" dir="rtl">
             {currentProject.name}

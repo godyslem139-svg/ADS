@@ -60,7 +60,7 @@ export default function ServicesSection() {
   return (
     <section className="py-24 relative overflow-hidden w-full bg-transparent">
       
-      {/* عنوان السكشن والوصف الجديد */}
+
       <div className="text-center px-4 mb-20">
         <span className="text-[#00e5ff] text-xs font-bold tracking-[0.25em] uppercase px-5 py-2 rounded-full bg-[#00e5ff]/10 border border-[#00e5ff]/30 inline-block mb-4 shadow-[0_0_15px_rgba(0,229,255,0.2)]">
           خدماتنا الاحترافية
@@ -73,17 +73,17 @@ export default function ServicesSection() {
         </p>
       </div>
 
-      {/* شريط الإخبار المتحرك (Marquee) للخدمات */}
+
       <div className="relative w-full overflow-hidden flex py-8" dir="ltr">
         <div className="animate-marquee flex gap-12 items-center">
-          {/* تكرار القائمة 3 مرات لضمان عدم ظهور فراغات */}
+
           {[...services, ...services, ...services].map((service, index) => (
             <Link
               key={index}
               href={`/services/${service.slug}`}
               className="w-[480px] md:w-[560px] flex-shrink-0 flex flex-col items-center gap-6 group cursor-pointer p-4 transition-transform duration-500 hover:scale-105"
             >
-              {/* صورة الخدمة مع توهج وظل النيون */}
+
               <div className="relative w-full h-[420px] md:h-[500px] transition-transform duration-500 group-hover:-translate-y-2">
                 <Image
                   src={service.img}
@@ -93,7 +93,7 @@ export default function ServicesSection() {
                 />
               </div>
 
-              {/* عنوان الخدمة وزر التوجيه */}
+
               <div className="flex flex-col items-center gap-3 text-center w-full" dir="rtl">
                 <span className="text-white font-black text-2xl md:text-3xl group-hover:text-[#00e5ff] transition-colors drop-shadow-[0_0_10px_rgba(0,229,255,0.3)]">
                   {service.title}

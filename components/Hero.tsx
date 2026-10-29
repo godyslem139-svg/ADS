@@ -25,7 +25,6 @@ export default function Hero() {
           نصنع نمو علامتك التجارية الرقمية
         </div>
 
-        {/* العنوان الرئيسي */}
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
           حلول التسويق الرقمي <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00e5ff] to-[#0077b6]">المتكاملة</span>
         </h1>
@@ -43,7 +42,6 @@ export default function Hero() {
             استكشف خدماتنا ومشاريعنا
           </Link>
 
-          {/* زر الواتساب */}
           <a 
             href="https://wa.me/201151033384"
             target="_blank"
